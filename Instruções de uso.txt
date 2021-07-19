@@ -1,0 +1,38 @@
+Gabriel Zolla Juarez
+RA: 11201721446
+
+---> INSTRUÇÕES DE COMPILAÇÃO E EXECUÇÃO <----
+
+1 - Ir até a pasta no prompt através do comando cd
+EXEMPLO: cd C:/Users/Pichau/Desktop/ProjetoSD/napsterTransfer
+
+2 - Executar o comando set classpath=C:\Users\pasta\gson-2.8.7.jar
+EXEMPLO: set classpath=C:\Users\Pichau\Desktop\ProjetoSD\napsterTransfer\gson-2.8.7.jar
+
+3 - Executar o comando:
+javac Mensagem.java Servidor.java Peer.java
+
+4 - Voltar uma pasta com cd ..
+
+5 - Para rodar o servidor, rodar o comando:
+java -cp  ".;./napsterTransfer/gson-2.8.7.jar" napsterTransfer.Servidor
+
+6 - Para rodar o peer, rodar o comando: 
+java -cp  ".;./napsterTransfer/gson-2.8.7.jar" napsterTransfer.Peer
+
+
+-------------> INSTRUÇÕES DE USO <-------------
+
+- Primeiramente, utilizar o join da forma "join: IP, Porta, Pasta"
+EXEMPLO: join: 127.0.0.1, 8080, C:/
+
+- Para fazer o search, basta fazer "search: nomeDoArquivo"
+EXEMPLO: search: teste.txt
+
+- Para fazer o download, basta fazer "download: hostIP, portIP, arquivo"
+EXEMPLO: 127.0.0.1, 8080, teste.txt
+
+- Para fazer o update, basta fazer "update: teste.txt"
+EXEMPLO: update: teste.txt
+
+- Para fazer o leave, basta fazer "leave"
